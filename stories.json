@@ -1,0 +1,93 @@
+[
+  {
+    "id": "yannis",
+    "name": "Yannis",
+    "role": "Assyrtiko Farmer",
+    "location": "Megalochori",
+    "category": "Farmers",
+    "quote": "Volcanic soil teaches patience. You cannot rush what the earth gives.",
+    "fullStory": "Yannis has walked the terraced vineyards of Megalochori for nearly seventy years. His hands, rough as the pumice stone that litters the caldera, tell the story of a lifetime spent coaxing life from the arid, salt-sprayed earth. Here, the vines are not trellised but woven into low-lying baskets—kouloura—to protect the precious Assyrtiko grapes from the relentless Aegean winds.\n\n\"The earth here doesn't give easily,\" Yannis says, his eyes squinting against the brilliant midday sun. \"You have to listen to the wind and watch the clouds. Every vintage is a conversation between the volcano and the sea. If you try to rush it, the wine will tell everyone your secret.\"\n\nHe pauses, running his fingers across a gnarled vine trunk that's older than he is. \"My grandfather planted this one. It survived the earthquake of '56. It survived the tourists. It will survive me. That's the thing about volcanic soil—it remembers everything.\"",
+    "lat": 36.3756,
+    "lng": 25.4316,
+    "portrait": "images/yannis.webp",
+    "audioDuration": "2:23"
+  },
+  {
+    "id": "nikos",
+    "name": "Nikos P.",
+    "role": "Village Baker",
+    "location": "Emporio",
+    "category": "Food Traditions",
+    "quote": "The wood-fired oven never truly sleeps; it breathes with the village heartbeat every dawn.",
+    "fullStory": "Before the first rooster crows in Emporio, Nikos is already elbow-deep in flour. His bakery, tucked into the fortified medieval village, has been in his family for four generations. The oven—a massive stone dome blackened by decades of olive wood fires—is the heart of the operation.\n\n\"People think baking is about recipes,\" he says, sliding a tray of barley rusks into the oven's mouth. \"It's not. It's about temperature, about feeling the heat on your forearm and knowing exactly when the bread is ready. My father taught me with his hands, not with a thermometer.\"\n\nThe aroma of fresh bread and herbs fills the narrow stone corridors of Emporio each morning. Locals stop by not just for bread but for conversation—the bakery is a social institution. \"When the oven goes cold, the village goes quiet,\" Nikos says. \"That's why I never let it go cold.\"",
+    "lat": 36.3680,
+    "lng": 25.4507,
+    "portrait": "images/nikos.webp",
+    "audioDuration": "1:58"
+  },
+  {
+    "id": "eleni",
+    "name": "Eleni M.",
+    "role": "Master Weaver",
+    "location": "Pyrgos",
+    "category": "Artisans",
+    "quote": "Every thread is a memory of my grandmother's hands, pulling the blue from the sea into the loom.",
+    "fullStory": "In the hilltop village of Pyrgos, Eleni sits at a wooden loom that's older than the modern Greek state. The rhythmic clack of the shuttle is the soundtrack of her days, a metronome that connects her to generations of women who wove the fabric of island life.\n\n\"My grandmother taught me when I was seven,\" she recalls, her fingers never pausing. \"She said the loom is like the sea—you have to respect its rhythm or it will tangle everything. I didn't understand then. Now I do.\"\n\nHer textiles—deep indigos, volcanic blacks, and the warm ochre of Santorini's cliffs—hang in a small workshop that doubles as her home. Each piece takes weeks. \"Fast fashion has no place here,\" she says firmly. \"These patterns are from the 18th century. They carry stories of women who survived pirates, earthquakes, and poverty. I won't rush their memory.\"",
+    "lat": 36.3783,
+    "lng": 25.4483,
+    "portrait": "images/eleni.webp",
+    "audioDuration": "2:11"
+  },
+  {
+    "id": "yorgos",
+    "name": "Yorgos K.",
+    "role": "Vintner",
+    "location": "Oia",
+    "category": "Farmers",
+    "quote": "The volcanic soil isn't just dirt; it's magic that gives the Assyrtiko its soul and mineral bite.",
+    "fullStory": "Yorgos runs a small, family-owned winery on the northern tip of the island, where the caldera views are most dramatic and the winds are fiercest. His Assyrtiko wines have won awards in Athens and Paris, but he shrugs off the accolades.\n\n\"The wine makes itself,\" he insists, pouring a glass of pale gold liquid into the light. \"I just try not to get in the way. The volcano did all the work millions of years ago. It created this soil—this powder that holds water like a sponge and gives the grapes their mineral character.\"\n\nHe walks between the low-slung vines, which look almost alien in their basket-like formations. \"Every winemaker on this island is really just a translator. We translate what the volcano says into something you can taste. And the volcano always has something new to say.\"",
+    "lat": 36.4611,
+    "lng": 25.3753,
+    "portrait": "images/yorgos.webp",
+    "audioDuration": "1:45"
+  },
+  {
+    "id": "sophia",
+    "name": "Sophia L.",
+    "role": "Ceramicist",
+    "location": "Akrotiri",
+    "category": "Artisans",
+    "quote": "Clay remembers everything. The pressure of my thumbs, the heat of the kiln, the history of the island.",
+    "fullStory": "Near the ancient ruins of Akrotiri—the 'Pompeii of the Aegean'—Sophia shapes clay into vessels that echo forms discovered in the Bronze Age excavation just meters from her studio. It's a deliberate choice.\n\n\"I studied archaeology before I became a potter,\" she explains, centering a lump of local clay on her wheel. \"When you hold a 3,600-year-old pot from Akrotiri, you can still see the thumbprints of the person who made it. That's incredible. That's what I want my work to do—carry a human imprint through time.\"\n\nHer pieces are raw, unglazed, and tactile. They sell quietly to collectors who appreciate the philosophy behind them. \"I don't make souvenirs,\" she says. \"I make conversations between the ancient and the modern. The clay from this volcano has been shaped by human hands for millennia. I'm just the latest in the line.\"",
+    "lat": 36.3517,
+    "lng": 25.4039,
+    "portrait": "images/sophia.webp",
+    "audioDuration": "2:34"
+  },
+  {
+    "id": "dimitris",
+    "name": "Dimitris S.",
+    "role": "Sea Captain",
+    "location": "Ammoudi",
+    "category": "Sea & Harbor",
+    "quote": "The caldera is a cradle. It can be fierce, but it always brings our boats back home eventually.",
+    "fullStory": "Dimitris has captained fishing boats in the Santorini caldera for over forty years. His face is deeply lined by sun and salt, and his hands are calloused maps of every rope he's ever pulled. He operates from Ammoudi Bay, the tiny harbor at the foot of Oia's cliffs.\n\n\"The caldera looks gentle from up there,\" he says, gesturing to the white houses hundreds of steps above. \"But down here, you know the truth. The currents are strong, the winds change in minutes, and the depth—people forget there's a volcano down there, still breathing.\"\n\nHe maintains a small fleet of traditional caiques, painted in the bright blues and reds of the Cyclades. \"Every morning I check the sea the way a farmer checks his soil. Is it ready? Is it generous today? The sea and the volcano made a deal long ago—the sea keeps the volcano cool, and the volcano gives the sea its fish. I'm just a guest at their table.\"",
+    "lat": 36.4629,
+    "lng": 25.3711,
+    "portrait": "images/dimitris.webp",
+    "audioDuration": "2:07"
+  },
+  {
+    "id": "maria",
+    "name": "Maria T.",
+    "role": "Tomato Farmer",
+    "location": "Megalochori",
+    "category": "Food Traditions",
+    "quote": "Small tomatoes, but they hold all the sun and the volcanic salt of the island. Quality over size.",
+    "fullStory": "Maria tends to the famous Santorini cherry tomatoes in the sun-blasted fields around Megalochori. These tiny, intensely flavored fruits are a PDO product—their unique taste comes directly from the volcanic terroir and the island's minimal rainfall.\n\n\"Mainland tomatoes are big and watery,\" she says, holding a cluster of small, deep-red fruits. \"Ours are small, wrinkled, and packed with flavor. The volcano concentrates everything—the sugar, the acid, the minerals. One of our tomatoes has more taste than a kilo of the others.\"\n\nShe makes tomatokeftedes (tomato fritters) that are legendary in the village. \"The secret isn't actually the recipe—every grandmother has the same one. The secret is the tomato. If the tomato is honest, the food is honest. And our tomatoes are very honest. They can't lie. The volcano taught them that.\"",
+    "lat": 36.3767,
+    "lng": 25.4289,
+    "portrait": "images/maria.webp",
+    "audioDuration": "1:52"
+  }
+]

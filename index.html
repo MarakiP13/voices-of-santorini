@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Voices of Santorini — A digital cultural memory layer mapping the oral histories and local voices of Santorini island.">
+  <meta name="theme-color" content="#2B2B2B">
+  <title>Voices of Santorini — Whispers of the Caldera</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+
+  <!-- Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+  <!-- App Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ===== HOME VIEW ===== -->
+  <section id="home-view" class="view active">
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-label">Voices of Santorini</div>
+        <h1>Whispers of the Caldera</h1>
+        <p class="hero-desc">Beyond the postcards, a quiet resilience remains. We gather the fading echoes of island life—the oral histories, the textures of volcanic soil, and the enduring spirit of the locals.</p>
+      </div>
+    </div>
+
+    <div class="home-actions">
+      <div class="action-card" id="action-map" onclick="navigateTo('map')">
+        <span class="material-symbols-outlined">map</span>
+        <h3>Explore the Map</h3>
+        <p>Navigate the geography of memory</p>
+      </div>
+      <div class="action-card" id="action-library" onclick="navigateTo('library')">
+        <span class="material-symbols-outlined">auto_stories</span>
+        <h3>View Stories</h3>
+        <p>A collection of island narratives</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top: var(--space-xl);">
+      <h2>Featured Archive</h2>
+      <a href="#" onclick="navigateTo('library'); return false;">View All</a>
+    </div>
+    <div class="featured-scroll" id="featured-scroll">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ===== MAP VIEW ===== -->
+  <section id="map-view" class="view">
+    <div id="map-container">
+      <div class="map-title-bar">
+        <h1>Voices of Santorini</h1>
+        <p>Cyclades, Greece</p>
+      </div>
+      <div id="leaflet-map"></div>
+      <div class="map-bottom-sheet" id="map-bottom-sheet">
+        <div class="sheet-handle"></div>
+        <div class="sheet-content">
+          <img class="sheet-portrait" id="sheet-portrait" src="" alt="">
+          <div class="sheet-info">
+            <div class="sheet-name" id="sheet-name"></div>
+            <div class="sheet-role" id="sheet-role"></div>
+            <div class="sheet-quote" id="sheet-quote"></div>
+            <button class="sheet-btn" id="sheet-btn">
+              <span class="material-symbols-outlined">auto_stories</span>
+              Full Story
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIBRARY VIEW ===== -->
+  <section id="library-view" class="view">
+    <div class="library-header">
+      <h1>Story Library</h1>
+      <p>Oral histories from across the island</p>
+    </div>
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="Farmers">Farmers</button>
+      <button class="filter-chip" data-filter="Artisans">Artisans</button>
+      <button class="filter-chip" data-filter="Food Traditions">Food</button>
+      <button class="filter-chip" data-filter="Sea & Harbor">Sea & Harbor</button>
+    </div>
+    <div class="library-grid" id="library-grid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ===== DETAIL VIEW ===== -->
+  <section id="detail-view" class="view">
+    <div class="detail-back" id="detail-back">
+      <span class="material-symbols-outlined">arrow_back</span>
+      Back
+    </div>
+
+    <div class="detail-hero">
+      <img class="detail-hero-img" id="detail-hero-img" src="" alt="">
+    </div>
+
+    <div class="audio-player">
+      <button class="play-btn" id="play-btn">
+        <span class="material-symbols-outlined">play_arrow</span>
+      </button>
+      <div class="audio-track">
+        <div class="audio-progress">
+          <div class="audio-progress-fill" id="audio-progress-fill"></div>
+        </div>
+        <div class="audio-time">
+          <span id="audio-current">0:00</span>
+          <span id="audio-duration">0:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-bio">
+      <h1 class="detail-name" id="detail-name"></h1>
+      <div class="detail-role" id="detail-role"></div>
+      <div class="detail-location" id="detail-location">
+        <span class="material-symbols-outlined">location_on</span>
+        <span id="detail-location-text"></span>
+      </div>
+      <blockquote class="detail-quote" id="detail-quote"></blockquote>
+      <div class="detail-story" id="detail-story"></div>
+    </div>
+
+    <div class="detail-map-section">
+      <div class="detail-map-label">Location</div>
+      <div id="detail-mini-map"></div>
+    </div>
+
+    <div class="related-section">
+      <h3>Related Stories</h3>
+      <div class="related-scroll" id="related-scroll">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOTTOM NAV ===== -->
+  <nav class="bottom-nav" id="bottom-nav">
+    <button class="nav-item active" data-view="home" id="nav-home">
+      <span class="material-symbols-outlined">home</span>
+      <span>Home</span>
+    </button>
+    <button class="nav-item" data-view="map" id="nav-map">
+      <span class="material-symbols-outlined">map</span>
+      <span>Map</span>
+    </button>
+    <button class="nav-item" data-view="library" id="nav-library">
+      <span class="material-symbols-outlined">auto_stories</span>
+      <span>Archive</span>
+    </button>
+    <button class="nav-item" data-view="search" id="nav-search">
+      <span class="material-symbols-outlined">search</span>
+      <span>Search</span>
+    </button>
+  </nav>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
